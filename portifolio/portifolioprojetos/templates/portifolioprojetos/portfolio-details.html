@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+	<!--================ Start Header Area =================-->
+	{% include 'partials/menu.html' %}
+	<!--================ End Header Area =================-->
+
+    <!--================ Start Banner Area =================-->
+    <section class="banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="container">
+                <div class="banner_content text-center">
+                    <h2>Detalhes do Projeto</h2>
+                    <div class="page_link">
+                        <a href="{% url 'index' %}">Início</a>
+                        <a href="{% url 'portifolioprojetos' %}">Projetos</a>
+                        <a href="{% url 'portifoliodetails' %}">Detalhes do Projeto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Banner Area =================-->
+
+	<!--================Start Portfolio Details Area =================-->
+	<section class="portfolio_details_area section_gap">
+        <div class="container">
+            <div class="portfolio_details_inner">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="left_img">
+                            <img class="img-fluid" src="{% static 'img/portfolio/python-logo.png' %}" width="300" alt="">
+                        </div>
+                    </div>
+                    <div class="offset-lg-1 col-lg-5">
+                        <div class="portfolio_right_text mt-30">
+                            <h4 class="text-uppercase">PROJETO PYTHON #1</h4>
+                            <p>
+                                Calculadora de Notas acadêmicias com diferentes pesos por categoria!
+                            </p>
+                            <ul class="list">
+                                <li><span>Cliente</span>: Projeto Curso Programador Python</li>
+                                <li><span>Website</span>: www.google.com</li>
+                                <li><span>Finalizado</span>: 20 de Julho de 2020</li>
+								<li><span>Linguagem</span>: Python 3.8</li>
+								<li><span>Tags</span>: Dicionário, Listas, Funções, For looping, If statements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+				<h3>Detalhes do Projeto</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit.</p>
+                <p>Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                    in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                    beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                    dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                    aliquam quaerat voluptatem.</p>
+            </div>
+        </div>
+    </section>
+    <!--================End Portfolio Details Area =================-->
+    
+        
+    <!--================Footer Area =================-->
+	{% include 'partials/footer.html' %}
+	<!--================End Footer Area =================-->
+
+{% endblock %}

@@ -1,0 +1,187 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+	<!--================ Start Header Area =================-->
+	{% include 'partials/menu.html' %}
+	<!--================ End Header Area =================-->
+
+	<!--================ Start Home Banner Area =================-->
+	<section class="home_banner_area">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="banner_content">
+							<h3 class="text-uppercase">Olá</h3>
+							<h1 class="text-uppercase">Eu sou Silvio</h1>
+							<h5 class="text-uppercase">Engenheiro de Produção, Contador e entusiasta da Programação.</h5>
+							<div class="d-flex align-items-center">
+								<a class="primary_btn" href="#"><span>Me Contrate!</span></a>
+								<a class="primary_btn tr-bg" href="#"><span>Veja meu CV</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="home_right_img">
+							<img class="" src="{% static 'img/banner/home-right.png' %}" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Home Banner Area =================-->
+
+	<!--================ Start About Us Area =================-->
+	<section class="about_area section_gap">
+		<div class="container">
+			<div class="row justify-content-start align-items-center">
+				<div class="col-lg-5">
+					<div class="about_img">
+						<img class="" src="{% static 'img/about-us.png' %}" alt="">
+					</div>
+				</div>
+
+				<div class="offset-lg-1 col-lg-5">
+					<div class="main_title text-left">
+						<h2>Deixa <br>
+							me apresentar!<br>
+							</h2>
+							
+						<p>
+							Trabalho como administrador de empresas há mais de 20 anos.
+							Mas já participei do desenvolvimento de sistemas,
+							Já participei de implantação de sistemas,
+							E continuo estudando novas linguagens.
+						</p>
+						<p>
+							Sou formado em Ciências da Computação, Engenharia da Produção e Contabilidade.
+							Trabalho com finanças, custos e recursos humanos e estudo linguagens para automatizar
+							tarefas e criar sistemas web!
+						</p>
+						<a class="primary_btn" href="#"><span>Baixar meu CV</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End About Us Area =================-->
+	
+	<!--================Start Portfolio Area =================-->
+	<section class="portfolio_area" id="portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title text-left">
+						<h2>PROJETOS RECENTEMENTE<br>
+							CONCLUÍDOS</h2>
+					</div>
+				</div>
+			</div>
+			<!--<div class="filters portfolio-filter">
+				<ul>
+					<li class="active" data-filter="*">todos</li>
+					<li data-filter=".popular">populares</li>
+					<li data-filter=".latest"> últimos</li>
+					<li data-filter=".upcoming">em progresso</li>
+				</ul>
+			</div>-->
+	
+			<div class="filters-content">
+				<div class="row portfolio-grid justify-content-center">
+					
+					<div class="col-lg-4 col-md-6 all latest">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="{% static 'img/portfolio/python-logo.png' %}" alt="">
+								<div class="overlay"></div>
+								<a href="{% static 'img/portfolio/python-logo.png' %}" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="{% url 'portifoliodetails' %}">PROJETO PYTHON #1</a></h4>
+								<p>Cálculadora de Notas Acadêmicas</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 all popular">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="{% static 'img/portfolio/django-logo3.png' %}" alt="">
+								<div class="overlay"></div>
+								<a href="{% static 'img/portfolio/django-logo3.png' %}" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="{% url 'portifoliodetails' %}">PROJETO DJANGO #1</a></h4>
+								<p>Portfólio de Proejtos</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Portfolio Area =================-->
+
+	<!--================ Start Features Area =================-->
+	<section class="features_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<div class="main_title">
+						<h2>Serviços Oferecidos</h2>
+						<p>
+							Is give may shall likeness made yielding spirit a itself togeth created 
+							after sea <br> is in beast beginning signs open god you're gathering ithe
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row feature_inner">
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="{% static 'img/services/s1.png' %}" alt="">
+						<h4>Wp developing</h4>
+						<p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="{% static 'img/services/s2.png' %}" alt="">
+						<h4>UI/ux design</h4>
+						<p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="{% static 'img/services/s3.png' %}" alt="">
+						<h4>Web design</h4>
+						<p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="{% static 'img/services/s4.png' %}" alt="">
+						<h4>seo optimize</h4>
+						<p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Features Area =================-->
+
+	<!--================Footer Area =================-->
+	{% include 'partials/footer.html' %}
+	<!--================End Footer Area =================-->
+
+{% endblock %}
